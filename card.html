@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Карточка</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styleCard.css">
+  <link rel="stylesheet" href="css/headerStyle.css">
+  <link rel="stylesheet" href="css/styleBox.css">
+  <script src="js/scriptCard.js" defer></script>
+</head>
+<body>
+<div class="sum-icon-box"></div>
+
+<div class="shadow-box"></div>
+<section class="section-box">
+  <header class="header-box">
+    <div class="container-title-box">
+      <span class="title-box">Ваша корзина пуста</span>
+    </div>
+    <a class="exit-div" href="#" aria-label="Выход">
+      <img src="css/iconButton/cancel.svg" alt="Выход" class="exit-box">
+    </a>
+  </header>
+  <div class="collections-row-items">
+    <div class="main-box">
+      <aside class="all-menu">
+        <div class="check-all-container">
+          <label class="label">
+            <input type="checkbox" class="checkbox check-all">
+            <span class="fake-checkbox"></span>
+            <span class="del-all-checkbox">Выбрать всё</span>
+          </label>
+        </div>
+        <div class="del-all-container">
+          <a href="#" aria-label="Удалить всё" class="button-del-all">Удалить всё
+            <img src="css/iconButton/delete.svg" alt="Удалить всё" class="del-all">
+          </a>
+        </div>
+      </aside>
+      <div class="opacity-border-box"></div>
+      <div class="container-items-in-box"></div>
+    </div>
+    <footer>
+      <div class="summary-info">
+        <span class="selected-text count-in-box"></span>
+        <span class="total-amount">товара(ов) на сумму</span>
+        <span class="selected-text total-price-in-box"></span>
+      </div>
+      <a class="a-order" href="order.html">
+        <button class="order"><span>Оформить заказ</span></button>
+      </a>
+    </footer>
+  </div>
+  <template class="template-item-in-box">
+    <aside class="row-items">
+      <div class="container-item">
+        <div class="info-item">
+          <label class="label">
+            <input type="checkbox" class="checkbox checkbox-item-in-box">
+            <span class="fake-checkbox"></span>
+          </label>
+          <span class="photo-pet-span">
+                        <img src="#" alt="Фото питомца" class="photo-pet-box">
+                    </span>
+        </div>
+        <div class="bred-calc">
+          <span class="breed-box"></span>
+          <div class="calk-container">
+            <button class="calk minus" name="minus">-</button>
+            <output name="quantity-breed" class="quantity-breed">1</output>
+            <button class="calk plus" name="plus">+</button>
+          </div>
+        </div>
+        <div class="del-item-container">
+          <div class="price-del-item">
+            <span class="price-box"></span>
+            <a href="#" aria-label="Удалить пароду">
+              <img src="css/iconButton/delete.svg" alt="Удалить пароду" class="del-item">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="opacity-border-box"></div>
+    </aside>
+  </template>
+</section>
+
+<header class="header-card">
+  <div class="logo">
+    <a href="index.html">
+      <img class="icon" src="css/iconButton/logo.svg" alt="Логотип">
+    </a>
+  </div>
+  <a href="index.html" class="inCatalog" aria-label="В каталог">
+    <button class="catalog-open">
+      <img class="icon" src="css/iconButton/threeLine.svg" alt="Бургер">
+      <span>Каталог</span>
+    </button>
+  </a>
+  <div class="search">
+    <label for="input-search" class="label-search">
+      <input name="search" id="input-search" type="text" required>
+      <span class="placeholder"><img src="css/iconButton/search.svg" alt="Лупа"> Поиск</span>
+      <span class="placeholder-table-version"><img src="css/iconButton/search.svg" alt="Лупа"> Поиск</span>
+      <button class="button-search">
+        <span>Найти</span>
+      </button>
+    </label>
+  </div>
+  <a href="#" class="inCatalog-mobile" aria-label="В каталог">
+    <button class="catalog">
+      <img class="icon" src="css/iconButton/threeLine.svg" alt="Бургер">
+    </button>
+  </a>
+  <a href="#" class="out-mobile-menu" aria-label="На главную">
+    <button class="exit-mobile-menu">
+      <img class="icon" src="css/iconButton/cancel.svg" alt="Выход">
+    </button>
+  </a>
+  <nav class="nav-header">
+    <a href="#">
+      <img class="icon" src="css/iconButton/bonus.svg" alt="Бонусы">
+      <span>Бонусы</span>
+    </a>
+    <a href="#">
+      <img class="icon" src="css/iconButton/box.svg" alt="Заказы">
+      <span>Заказы</span>
+    </a>
+    <a href="#">
+      <img class="icon" src="css/iconButton/promo.svg" alt="Акции">
+      <span>Акции</span>
+    </a>
+    <a href="#" class="button-basket">
+      <img class="icon iconBox" src="css/iconButton/petHouse.svg" alt="Корзина">
+      <span class="box-info">Корзина </span>
+    </a>
+  </nav>
+</header>
+<aside class="mobile-menu">
+  <a href="#">
+    <img class="icon" src="css/iconButton/bonus.svg" alt="Бонусы">
+    <span>Бонусы</span>
+  </a>
+  <a href="#">
+    <img class="icon" src="css/iconButton/box.svg" alt="Заказы">
+    <span>Заказы</span>
+  </a>
+  <a href="#">
+    <img class="icon" src="css/iconButton/promo.svg" alt="Акции">
+    <span>Акции</span>
+  </a>
+  <a href="#" class="button-in-box">
+    <img class="icon" src="css/iconButton/petHouse.svg" alt="Корзина">
+    <span class="box-info">Корзина</span>
+  </a>
+</aside>
+<aside>
+  <nav class="breadcrumb-nav">
+    <a class="breadcrumb breadcrumb__Card" href="index.html" aria-label="Вернуться">Каталог товаров / Собачки / </a>
+  </nav>
+  <main class="main">
+    <h1></h1>
+    <div class="opacity-border"></div>
+    <section class="base-card">
+      <div class="product-list__item">
+        <div class="img-div">
+          <img src="#" alt="Собака 1" class="img-pet">
+        </div>
+      </div>
+      <div class="product-list__item">
+        <h2></h2>
+        <table>
+          <tbody>
+          <tr class="gray">
+            <td class="first-column">Тип</td>
+            <td class="second-column" id="typePet"></td>
+          </tr>
+          <tr>
+            <td class="first-column">Размер</td>
+            <td class="second-column" id="sizePet"></td>
+          </tr>
+          <tr class="gray">
+            <td class="first-column">Основные черты</td>
+            <td class="second-column" id="subtypes">
+
+            </td>
+          </tr>
+          <tr>
+            <td class="first-column">Частые заболевания</td>
+            <td class="second-column" id="illness"></td>
+          </tr>
+          <tr class="gray">
+            <td class="first-column">Интеллект</td>
+            <td class="second-column" id="intelligence"></td>
+          </tr>
+          </tbody>
+        </table>
+        <p class="price-label">Стоимость</p>
+        <p class="price"></p>
+        <div class="item-button-box">
+          <button class="take"><span>Забрать</span></button>
+          <button class="inBox"><span>Добавить в корзину</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+</aside>
+</body>
+</html>

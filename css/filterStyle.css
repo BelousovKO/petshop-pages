@@ -1,0 +1,118 @@
+.p-filter {
+    display: none;
+    font-size: 16px;
+    color: #FBBA3C;
+}
+
+.h2filter,
+.section-form,
+.section-form-size {
+    padding: 7px;
+    height: auto;
+}
+
+.section-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.small-section-form {
+    overflow: hidden;
+    height: 40px;
+}
+
+.section-form,
+.section-form-size {
+    border-top: 1px solid #E8E8E8;
+    position: relative;
+}
+
+.a-filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.a-filter:active {
+    transform: rotate(180deg);
+}
+
+.filter-form {
+    width: 296px;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 2;
+    background: #F2F2F2;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.h2filter {
+    font-size: 20px;
+    height: 50px;
+}
+
+.h3filter {
+    font-size: 17px;
+}
+
+.a-filter-all,
+.mobile-filter-open {
+    text-decoration: none;
+    color: #FBBA3C;
+    cursor: pointer;
+}
+
+.a-filter-all {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.fast-search {
+    padding-left: 34px;
+    height: 32px;
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.fast-search-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+}
+
+.pet-size-input {
+    width: 70px;
+    height: 32px;
+    border: 0;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.filter {
+    position: relative;
+}
+
+.label-input-min-size {
+    position: relative;
+}
+
+@media (max-width: 639px) {
+    .filter {
+        display: none;
+    }
+
+    .p-filter {
+        display: block;
+        padding: 16px 0;
+    }
+}

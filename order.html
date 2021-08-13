@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Заказ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleOrder.css">
+    <link rel="stylesheet" href="css/headerStyle.css">
+    <link rel="stylesheet" href="css/styleBox.css">
+    <script src="js/scriptOrder.js" defer></script>
+</head>
+<body>
+
+<div class="sum-icon-box"></div>
+
+<div class="shadow-box"></div>
+<section class="section-box">
+    <header class="header-box">
+        <div class="container-title-box">
+            <span class="title-box">Ваша корзина пуста</span>
+        </div>
+        <a class="exit-div" href="#" aria-label="Выход">
+            <img src="css/iconButton/cancel.svg" alt="Выход" class="exit-box">
+        </a>
+    </header>
+    <div class="collections-row-items">
+        <div class="main-box">
+            <aside class="all-menu">
+                <div class="check-all-container">
+                    <label class="label">
+                        <input type="checkbox" class="checkbox check-all">
+                        <span class="fake-checkbox"></span>
+                        <span class="del-all-checkbox">Выбрать всё</span>
+                    </label>
+                </div>
+                <div class="del-all-container">
+                    <a href="#" aria-label="Удалить всё" class="button-del-all">Удалить всё
+                        <img src="css/iconButton/delete.svg" alt="Удалить всё" class="del-all">
+                    </a>
+                </div>
+            </aside>
+            <div class="opacity-border-box"></div>
+            <div class="container-items-in-box"></div>
+        </div>
+        <footer>
+            <div class="summary-info">
+                <span class="selected-text count-in-box"></span>
+                <span class="total-amount">товара(ов) на сумму</span>
+                <span class="selected-text total-price-in-box"></span>
+            </div>
+            <a class="a-order" href="order.html">
+                <button class="order"><span>Оформить заказ</span></button>
+            </a>
+        </footer>
+    </div>
+    <template class="template-item-in-box">
+        <aside class="row-items">
+            <div class="container-item">
+                <div class="info-item">
+                    <label class="label">
+                        <input type="checkbox" class="checkbox checkbox-item-in-box">
+                        <span class="fake-checkbox"></span>
+                    </label>
+                    <span class="photo-pet-span">
+                        <img src="#" alt="Фото питомца" class="photo-pet-box">
+                    </span>
+                </div>
+                <div class="bred-calc">
+                    <span class="breed-box"></span>
+                    <div class="calk-container">
+                        <button class="calk minus" name="minus">-</button>
+                        <output name="quantity-breed" class="quantity-breed">1</output>
+                        <button class="calk plus" name="plus">+</button>
+                    </div>
+                </div>
+                <div class="del-item-container">
+                    <div class="price-del-item">
+                        <span class="price-box"></span>
+                        <a href="#" aria-label="Удалить пароду">
+                            <img src="css/iconButton/delete.svg" alt="Удалить пароду" class="del-item">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="opacity-border-box"></div>
+        </aside>
+    </template>
+</section>
+
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img class="icon" src="css/iconButton/logo.svg" alt="Логотип">
+        </a>
+    </div>
+    <a href="index.html" class="inCatalog" aria-label="В каталог">
+        <button class="catalog-open">
+            <img class="icon" src="css/iconButton/threeLine.svg" alt="Бургер">
+            <span>Каталог</span>
+        </button>
+    </a>
+    <div class="search">
+        <label for="input-search" class="label-search">
+            <input name="search" id="input-search" type="text" required>
+            <span class="placeholder"><img src="css/iconButton/search.svg" alt="Лупа"> Поиск</span>
+            <span class="placeholder-table-version"><img src="css/iconButton/search.svg" alt="Лупа"> Поиск</span>
+            <button class="button-search">
+                <span>Найти</span>
+            </button>
+        </label>
+    </div>
+    <a href="index.html" class="inCatalog-mobile" aria-label="В каталог">
+        <button class="catalog">
+            <img class="icon" src="css/iconButton/cancel.svg" alt="Выход">
+        </button>
+    </a>
+    <nav class="nav-header">
+        <a href="#">
+            <img class="icon" src="css/iconButton/bonus.svg" alt="Бонусы">
+            <span>Бонусы</span>
+        </a>
+        <a href="#">
+            <img class="icon" src="css/iconButton/box.svg" alt="Заказы">
+            <span>Заказы</span>
+        </a>
+        <a href="#">
+            <img class="icon" src="css/iconButton/promo.svg" alt="Акции">
+            <span>Акции</span>
+        </a>
+        <a href="#" class="button-basket">
+            <img class="icon" src="css/iconButton/petHouse.svg" alt="Корзина">
+            <span>Корзина</span>
+        </a>
+    </nav>
+</header>
+<form class="form" method="get" action="#">
+    <section>
+        <nav class="breadcrumb-nav">
+            <a class="breadcrumb" href="index.html" aria-label="Вернуться">
+                Каталог товаров / Собачки / Оформление заказа
+            </a>
+        </nav>
+        <h1>Оформление заказа</h1>
+        <div class="opacity-border"></div>
+    </section>
+    <section class="base-section">
+        <h2>Получатель</h2>
+        <div class="recipient-container">
+            <label id="recipient-name">Имя</label>
+            <input name="recipient-name" class="recipient-name" type="text" placeholder="Ваше имя">
+            <label id="recipient-tel">Телефон</label>
+            <input name="recipient-tel" class="recipient-tel" type="tel" placeholder="+0 000-000-00-00">
+        </div>
+        <h2>Способ доставки</h2>
+        <div class="delivery-container">
+            <label class="label" for="pickup">
+                <input type="radio" class="radio" id="pickup" name="delivery" checked>
+                <span class="fake-radio"></span>
+                <span class="text">Самовывоз</span>
+            </label>
+            <label class="label" for="courier">
+                <input type="radio" class="radio" id="courier" name="delivery">
+                <span class="fake-radio"></span>
+                <span class="text">Курьер</span>
+            </label>
+        </div>
+        <h2 class="summary-title">
+            <span class="title-items-order count-items-order"></span>
+            <span class="title-items-order total-price-order"></span>
+        </h2>
+        <div class="opacity-border"></div>
+
+        <section class="section-item"></section>
+        <template class="template-item-order">
+            <div class="container-item-order">
+                <span class="photo-pet-span">
+                    <img src="" alt="Фото питомца" class="photo-pet">
+                </span>
+                <div class="info-item-order">
+                    <span class="breed"></span>
+                    <span class="quantity-bred"></span>
+                </div>
+                <div class="price-item">
+                    <span class="price-item-order"></span>
+                </div>
+            </div>
+            <div class="opacity-border"></div>
+        </template>
+
+    </section>
+    <section class="result-section">
+        <span class="total-info">Сумма заказа</span>
+        <span class="result-price prise-items"></span>
+        <span class="total-info">Самовывоз</span>
+        <span class="result-price price-delivery"></span>
+        <span class="info-total">Итого с доставкой</span>
+        <span class="price-total result-price-order"></span>
+    </section>
+    <div class="div-submit">
+        <input type="submit" class="submit" value="Создать заказ">
+    </div>
+</form>
+</body>
+</html>

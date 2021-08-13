@@ -1,0 +1,73 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.base {
+    margin: 0 auto;
+    min-height: calc(100vh - 80px);
+    display: grid;
+    grid-template-columns: 296px 1fr;
+}
+
+.breadcrumb {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.container-catalog-button {
+    display: none;
+    align-content: center;
+    grid-template-columns: 50% 50%;
+    padding: 0;
+}
+
+.breadcrumbCatalogOpen {
+    display: none;
+}
+
+.pet-buttons {
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #323232;
+    text-decoration: none;
+    height: 98px;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    margin-bottom: 24px;
+}
+
+.dog-button {
+    background-color: #FBBA3C;
+    background-image: url(iconButton/buttonDog.svg);
+}
+
+.cat-button {
+    background-color: #E95342;
+    background-image: url(iconButton/buttonCat.svg);
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.catalogClose {
+    display: none;
+}
+
+@media (max-width: 639px) {
+    .base {
+        grid-template-columns: 1fr;
+    }
+}
